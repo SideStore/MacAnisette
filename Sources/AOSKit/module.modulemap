@@ -1,0 +1,4 @@
+module AOSKit {
+    header "include/AOSKit.h"
+    export *
+}
