@@ -1,4 +1,4 @@
-import AOSKit
+@_exported import AOSKit
 import Foundation
 
 /// Uses `AOSKit` to return `ALTAnisetteData`
