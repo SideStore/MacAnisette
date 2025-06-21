@@ -3,5 +3,6 @@ import Testing
 
 @Test func getanisette() async throws {
     let ani = getAOSAnisette()
-    print(ani)
+    #expect(ani["locale"] as! String == Locale.current.identifier)
+    #expect(ani["routingInfo"] as! String == "0")
 }
