@@ -5,7 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation AOSKit
 
-+ (ALTAnisetteData *)getAnisetteData {
++ (NSDictionary *)getAnisetteData {
 
   AKDevice *device = [AKDevice currentDevice];
   id headers = [AOSUtilities retrieveOTPHeadersForDSID:@"-2"];
@@ -26,8 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
     @"deviceUniqueIdentifier" : [device uniqueDeviceIdentifier]
   };
     
-    ALTAnisetteData *data = [[ALTAnisetteData alloc] initWithJSON:dict];
-    return data;
+    return dict;
 }
 
 @end
