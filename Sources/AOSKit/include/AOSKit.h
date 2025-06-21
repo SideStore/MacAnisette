@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-#import "ALTAnisetteData.h"
 
 @interface AOSUtilities : NSObject
 + (id)currentComputerName;
@@ -17,6 +16,6 @@
 @end
 
 @interface AOSKit : NSObject
-+ (ALTAnisetteData *)getAnisetteData;
++ (NSDictionary *)getAnisetteData;
 @end
 
